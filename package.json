@@ -1,0 +1,27 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": "app.js",
+  "pkg": {
+    "scripts":[
+      "app.js"
+    ],
+    "assets": ["source_log/**/*","log/**/*"],
+    "targets": ["node14-macos-x64"],
+    "outputPath": "app"
+  },
+
+  "scripts": {
+    "pkg": "pkg  . --compress GZip",
+    "mac-arm": " pkg app.js -t node14-macos-arm64 --out-path ./app/",
+    "mac-x64": " pkg app.js -t node14-macos-x64, --output ./app/app_x64",
+    "win-x64": " pkg app.js -t node14-win-x64, --output ./app/win_x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
