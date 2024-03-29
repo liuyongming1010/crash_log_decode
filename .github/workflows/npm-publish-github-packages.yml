@@ -22,6 +22,8 @@ jobs:
           
       - name : npm
         run  : npm install 
+
+      - run : npm install pkg -g
    
       - name : pkg
         run : npm run pkg
