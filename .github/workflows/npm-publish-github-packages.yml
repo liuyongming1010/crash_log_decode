@@ -9,18 +9,20 @@ on:
 
 jobs:
   build:
+  
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v3
       
-      - name: 安装node
+      - name: Use node
         uses: actions/setup-node@v3
         with:
           node-version: 16
           
-      - name : 安装依赖
+      - name : npm
         run  : npm install 
    
-      - name : 构建
+      - name : pkg
         run : npm run pkg
 
