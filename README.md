@@ -12,5 +12,7 @@ cd xxx/app/
 
 ```
 
+下载地址 ： <https://github.com/liuyongming1010/crash_log_decode/releases>
+
 
 
