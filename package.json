@@ -14,7 +14,7 @@
   },
 
   "scripts": {
-    "pkg": "pkg  . --compress GZip",
+    "pkg": "pkg  . --compress GZip &&  tar -zvcf release.tar.gz app",
     "mac-arm": " pkg app.js -t node14-macos-arm64 --out-path ./app/",
     "mac-x64": " pkg app.js -t node14-macos-x64, --output ./app/app_x64",
     "win-x64": " pkg app.js -t node14-win-x64, --output ./app/win_x64"
